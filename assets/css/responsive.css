@@ -1,0 +1,411 @@
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .menu-icon {
+        display: block;
+          color:  rgba(151, 230, 14, 0.867);;
+    }
+
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(1, 8, 0, 0.95);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navbar nav ul.active {
+        display: flex;
+    }
+
+    .navbar nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    
+}
+
+/* Responsive Login and Register Page */
+@media (max-width: 1024px) {
+  .header-container h1 {
+      font-size: 26px;
+  }
+
+  .header-container p {
+      font-size: 13px;
+  }
+
+  .form-container {
+      width: 80%;
+      padding: 25px;
+  }
+
+  input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+      position: absolute;
+      top: 5%; /* Move title higher */
+      width: 90%;
+      text-align: center;
+  }
+
+  .header-container h1 {
+      font-size: 24px;
+  }
+
+  .header-container p {
+      font-size: 12px;
+  }
+
+  .form-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  input {
+      font-size: 12px;
+      padding: 7px;
+  }
+
+  button {
+      font-size: 13px;
+      padding: 7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container h1 {
+      font-size: 22px;
+  }
+
+  .header-container p {
+      font-size: 11px;
+  }
+
+  .form-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  input {
+      font-size: 11px;
+      padding: 6px;
+  }
+
+  button {
+      font-size: 12px;
+      padding: 6px;
+  }
+}
+
+/* Adoption Process Section Mobile Responsive */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 90%;
+    }
+
+    .adoption-process h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* getInTouch Section Mobile Responsive */
+@media (max-width: 600px) {
+    .getInTouch form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getInTouch input {
+        width: 100%;
+    }
+
+    .getInTouch button {
+        width: 100%;
+    }
+}
+
+/* Responsive Puppy Listings */
+@media (max-width: 1024px) {
+  .puppy-cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 0 5%;
+  }
+
+  .puppy-card {
+      font-size: 14px;
+  }
+
+  .puppy-card h3 {
+      font-size: 1.5em;
+  }
+
+  .puppy-card .price {
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .puppy-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 0 5%;
+  }
+
+  .puppy-card {
+      font-size: 12px;
+      padding-bottom: 15px;
+  }
+
+  .puppy-card img {
+      height: 150px;
+  }
+
+  .puppy-card h3 {
+      font-size: 1.3em;
+  }
+
+  .puppy-card .price {
+      font-size: 1em;
+  }
+
+  .puppy-card .add-to-cart {
+      font-size: 1em;
+      padding: 8px 15px;
+  }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+      font-size: 12px;
+      padding: 15px;
+  }
+}
+
+/* Responsive Shopping Cart */
+@media (max-width: 600px) {
+  .cart {
+      width: 90%;
+      right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
+
+/*  Responsive Mobile View */
+@media screen and (max-width: 768px) {
+    .pet-list {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .pet-card {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Mobile Responsive for login singnup page */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* Increase width on small screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .form-container input,
+    .form-container button {
+        width: 100%; /* Make inputs and buttons full width */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .form-container input,
+    .form-container button {
+        font-size: 12px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+    /* Container */
+  .container {
+    margin-top: -22px;
+    background-color: #eebcfa;
+   
+  }
+
+  /* Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+      font-size: 14px;
+    }
+  
+    /* About Us Section */
+    .about-us {
+      padding: 30px 15px;
+    }
+  
+    .about-us h2 {
+      font-size: 28px;
+    }
+  
+    .about-us p {
+      font-size: 1rem;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-text, 
+    .about-media {
+      flex: none;
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .about-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .video-container iframe {
+      width: 100%;
+      height: 250px;
+    }
+  
+    /* Team Section */
+    .our-team {
+      padding: 30px 15px;
+    }
+  
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .team-member img {
+      width: 80px;
+    }
+  
+    /* Testimonials */
+    .testimonials {
+      padding: 30px 15px;
+    }
+  
+    .testimonial-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial {
+      max-width: 100%;
+    }
+  
+    /* FAQ Section */
+    .faq {
+      text-align: center;
+      padding: 30px 15px;
+    }
+  
+    .faq h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .faq-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .faq-container {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  
+    .faq-item {
+      padding: 15px;
+    }
+  
+    /* Move FAQ Cover Image to Bottom */
+    .faq-cover {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .faq-cover img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    /* Footer */
+    .footer {
+      padding: 20px 15px;
+      text-align: center;
+    }
+  }
+  
+ 
+

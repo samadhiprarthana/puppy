@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+   
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+<!-- Page Title and Description -->
+<div class="header-container">
+    <h1>Sign up to find your new puppy</h1>
+    <p>We promise to provide your perfect puppy and ensure your experience leaves you with a big smile and a warm heart.</p>
+</div>
+
+
+    <div class="form-container">
+
+        <form id="registerForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+        
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* General Page Styling */
+body {
+  padding-top: 20vh;
+  height: 100vh;
+  margin: 0;
+ 
+  background-color: rgba(211, 246, 151, 0.867);
+  color:  rgba(151, 230, 14, 0.867);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: rgba(1, 8, 0, 0.867);
+  position: fixed;
+  width: 100%;
+  height: 80px; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar .logo img {
+  width: 100px; 
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li {
+  display: inline;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color:  rgba(151, 230, 14, 0.867);
+}
+
+/* Login Button */
+.login-btn a {
+  background:  rgba(151, 230, 14, 0.867);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 20px;
+ 
+}
+
+.login-btn a:hover {
+  background:white;
+  color:  rgba(151, 230, 14, 0.867);
+}
+
+/* Mobile Menu (Hidden by Default) */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Puppy Listing Section */
+.puppy-listing {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(211, 246, 151, 0.867);
+}
+
+.puppy-listing h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: rgba(35, 52, 6, 0.867);
+}
+
+/* Grid Layout for Puppies */
+.puppy-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  padding: 0 10%;
+}
+
+/* Individual Puppy Card */
+.puppy-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: rgba(151, 230, 14, 0.867);
+  padding-bottom: 20px;
+}
+
+.puppy-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.puppy-card h3 {
+  font-size: 1.8em;
+  margin: 15px 0;
+}
+
+.puppy-card .price {
+  font-size: 1.5em;
+  color:rgba(35, 52, 6, 0.867);
+  margin: 10px 0;
+}
+
+.puppy-card .description {
+  font-size: 1em;
+  color:rgba(35, 52, 6, 0.867);
+  margin: 10px 15px;
+}
+
+/* Add to Cart Button */
+.puppy-card .add-to-cart {
+  padding: 10px 20px;
+  background-color:rgba(151, 230, 14, 0.867);
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.puppy-card .add-to-cart:hover {
+  background-color: white;
+  color: rgba(151, 230, 14, 0.867);
+  transform: scale(1.05);
+}
+
+/* Hover Effects */
+.puppy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Shopping Cart */
+.cart {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+
+
+
+
+/* Footer Section */
+.footer {
+  background-color: rgba(1, 8, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.footer-container p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-container a {
+  color: rgba(151, 230, 14, 0.867);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+     <!-- Page Title and Description -->
+     <div class="header-container">
+        <h1>Log in to Forever Puppies</h1>
+        <p>We promise to provide your perfect puppy and ensure your experience leaves you with a big smile and a warm heart.</p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        
+        <form id="loginForm">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    
+        <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        <p id="error-message"></p>
+    </div>
+     
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

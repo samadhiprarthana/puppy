@@ -1,0 +1,740 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(1, 8, 0, 0.867);
+    position: fixed;
+    width: 100%;
+    height: 80px; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar .logo img {
+    width: 100px; /* Adjust logo size */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color:  rgba(151, 230, 14, 0.867);
+}
+
+/* Login Button */
+.login-btn a {
+    background:  rgba(151, 230, 14, 0.867);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.login-btn a:hover {
+    background:white;
+    color:  rgba(151, 230, 14, 0.867);
+}
+
+/* Mobile Menu (Hidden by Default) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .welcome {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; 
+    padding: 20px;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; /* Keep it behind the content */
+}
+.main-content {
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1; /* Ensure it appears above video */
+}
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Start from top */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Settle to normal */
+    }
+}
+
+.main-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(151, 230, 14, 0.867);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    animation: fadeSlide 1s ease-in-out forwards; 
+}
+
+
+
+
+/* Additional Box for Call to Action */
+.welcome-content {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px; /* Adds spacing below main content */
+    text-align: center;
+}
+.welcome-content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* Browse Puppies Button */
+.browse-btn {
+    display: inline-block;
+    background:  rgba(151, 230, 14, 0.867);
+    color: black;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.browse-btn:hover {
+    background: rgba(151, 230, 14, 0.867);
+}
+
+.home-content {
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); 
+   
+   
+}
+
+/* Styling for h2 */
+.home-content h2 {
+    max-width: 600px;
+    font-size: 28px;
+    color: rgba(35, 52, 6, 0.867);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for p */
+.home-content p {
+    max-width: 1000px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+/* Full-screen wrapper */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height */
+    margin: 0;
+    padding-top: 80px; /* Make space for fixed navbar */
+}
+
+
+/* Background Video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1; 
+}
+/* Title and Description - Positioned at the top */
+.header-container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.header-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:  rgba(151, 230, 14, 0.867);
+}
+
+.header-container p {
+    font-size: 20px;
+   color:white;
+}
+
+/* Form Container - Centered */
+.form-container {
+    position: absolute;  
+    top: 50%;           
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 450px;
+    max-width: 90%;
+    color: white; 
+}
+
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+button {
+    background: rgba(151, 230, 14, 0.867) ;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background:white; 
+    color:  rgba(151, 230, 14, 0.867) ;
+}
+
+/* Sign-up link */
+p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Available Pets Section */
+.available-pets {
+    text-align: center;
+    padding: 40px 5%;
+    background-color:rgba(255, 255, 255, 0.2); 
+}
+
+.available-pets h2 {
+    font-size: 32px;
+    color:  rgba(28, 39, 10, 0.867);
+    margin-bottom: 10px;
+}
+
+.available-pets p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Pet List Grid */
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pet Card Styling */
+.pet-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    width: 100%; 
+    max-width: 400px; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Adjusting Image Size */
+.pet-card img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+/* Pet Card Text Styling */
+.pet-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color:  rgba(151, 230, 14, 0.867); 
+}
+
+.pet-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* See More Button */
+.seemorebtn {
+    margin-top: 20px;
+}
+
+.seemorebtn a {
+    text-decoration: none;
+    background: rgba(151, 230, 14, 0.867); 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.seemorebtn a:hover {
+    background: white;
+    color: rgba(151, 230, 14, 0.867);
+    border: 1px solid rgba(151, 230, 14, 0.867);
+}
+
+
+/* Adoption Process Section */
+.adoption-process {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(28, 39, 10, 0.867);
+}
+
+/* Section title */
+.adoption-process h2 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Steps Container */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual Step */
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+/* Step Images */
+.step img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Step Titles */
+.step h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Step Descriptions */
+.step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
+/* .getInTouch Section */
+.getInTouch {
+    background-color: white;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.getInTouch h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgba(35, 52, 6, 0.867);
+}
+
+/* Center the form properly */
+.getInTouch form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Input field styling */
+.getInTouch input {
+    flex: 1;
+    padding: 12px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Button styling */
+.getInTouch button {
+    height: 40px;
+    background: rgba(151, 230, 14, 0.867);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the button aligns properly with the input field */
+.getInTouch input,
+.getInTouch button {
+    vertical-align: middle;
+}
+
+/* Hover effect */
+.getInTouch button:hover {
+    background: white;
+    color: rgba(151, 230, 14, 0.867);
+    border: 1px solid rgba(151, 230, 14, 0.867);
+}
+
+
+ /* About Us Page Styling */
+ .about-us {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(225, 249, 182, 0.888);
+  }
+  
+  .about-us h2 {
+    font-size: 2.5rem;
+    color:rgba(151, 230, 14, 0.867);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(8, 11, 3, 0.867);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+  }
+  .about-img img {
+    width: 90%; 
+    max-width: 1200px; 
+    height: 500px; 
+  }
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .about-text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem;
+    color:rgba(35, 52, 6, 0.867);
+    margin-bottom: 10px;
+  }
+
+.about-text ul li {
+    list-style: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+.about-text ul li::before {
+    content: "✔";
+    color: rgba(35, 52, 6, 0.867);
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.about-media {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .video-container {
+    margin: 20px 0;
+  }
+
+  
+/* Team Section */
+.our-team {
+    padding: 50px 50px;
+    background-color:rgba(19, 31, 0, 0.867);
+    text-align:center;
+    color: #ecf0f1;
+   
+  }
+  .our-team h1 {
+    font-size: 50px;
+  }
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .team-member h3 {
+    font-size: 20px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: white;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    margin-top: 20px;
+    max-width: 400px;
+    border: 1px solid rgba(151, 230, 14, 0.867);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(118, 246, 6, 0.1);
+    
+    font-style: italic;
+    color:  rgba(15, 22, 2, 0.867);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .testimonial:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .testimonial h4 {
+    font-weight: bold;
+    color: rgba(151, 224, 25, 0.867);
+    margin-top: 10px;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgb(217, 241, 172);
+    margin-top: 10px;
+    position: relative;
+  }
+  
+/* Move the heading to the left */
+.faq h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    text-align: left; 
+  }
+
+ /* FAQ Content Wrapper */
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+
+ /* FAQ Container - Adjust to the left */
+.faq-container {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 50px; 
+  }
+  
+  .faq-item {
+    background: #fff;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item h3 {
+    font-size: 22px;
+    color: rgba(35, 50, 10, 0.867);
+  }
+  
+  .faq-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+/* FAQ Cover Image - Fixed to Right Corner */
+.faq-cover {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .faq-cover img {
+    width: 750px; /* Adjust the width as needed */
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* Contac html */
+
+/* Footer Section */
+.footer {
+    background-color: rgba(1, 8, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.footer-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-container a {
+    color: rgba(151, 230, 14, 0.867);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
